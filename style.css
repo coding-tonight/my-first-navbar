@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282828;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.header-bar {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav {
+  line-height: 80px;
+}
+.topnav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0 30px 0 0;
+}
+.topnav ul li {
+  display: inline-block;
+  padding: 40px 50px;
+}
+.topnav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Zen Dots", cursive, "sans-serif";
+}
+
+.btn-cont {
+  font-weight: 200px;
+  border-radius: 5px;
+  border: 3px solid #3500d3;
+  padding: 20px 15px;
+}
+.btn-cont:hover {
+  background-color: #3500d3;
+  color: #ffffff;
+}
+
+.topnav input {
+  display: none;
+}
+.topnav label {
+  font-size: 25px;
+  margin: 0 45px 0 45px;
+  position: relative;
+  float: right;
+  display: none;
+}
+.topnav .exit {
+  display: none;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-bar {
+    max-width: 100%;
+    font-size: 20px;
+  }
+  .header-bar .flex-box nav #menu:checked ~ .hide {
+    display: block;
+  }
+  .header-bar label img {
+    height: 50px;
+    width: 200px;
+  }
+
+  .topnav label {
+    display: block;
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+  }
+  .topnav .hide {
+    display: none;
+    height: 110vh;
+  }
+  .topnav .hide ul label {
+    position: absolute;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .topnav {
+    line-height: 80px;
+  }
+  .topnav ul {
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    height: 100vh;
+  }
+  .topnav ul .btn-cont {
+    font-weight: 200px;
+    display: block;
+    border: none;
+    background-color: #ffffff;
+  }
+  .topnav ul .btn-cont:hover {
+    background-color: white;
+    color: black;
+  }
+  .topnav ul li {
+    display: block;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    max-width: 100vw;
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .header-bar {
+    font-size: 0.5rem;
+  }
+  .header-bar .flex-box #exit {
+    display: none;
+  }
+  .header-bar .flex-box .btn-exit img {
+    padding-right: 0;
+    width: 1px;
+    margin: 5px 0 0 0;
+  }
+}
+.main {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
